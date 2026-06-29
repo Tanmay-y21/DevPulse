@@ -1,4 +1,4 @@
-# DevPulse / SystemGuardian 🚀
+# DevPulse
 
 An automated, full-stack AI-driven developer analytics platform that captures real-time GitHub commit streams via secure webhooks, processes technical complexity through the Gemini 2.5 Pro architecture, and generates automated daily standups and project health vectors. 
 
@@ -20,7 +20,7 @@ The platform is engineered as a decoupled full-stack monorepo, separating a low-
                    │
          ┌─────────┴─────────┐
          ▼                   ▼
- ⚡ [Cache Hit]        🤖 [Cache Miss]
+   [Cache Hit]           [Cache Miss]
    Read MongoDB          Run Gemini 2.5 Flash
    Atlas Documents       Compile Analysis Matrix
          │                   │
@@ -38,7 +38,7 @@ Deterministic Dual-Key Caching: Implements an optimization layer inside MongoDB 
 
 Structured Document Sub-Schemas: Manages historical commit metrics using highly indexed, compound Mongoose structures (userId, repository, createdAt).
 
-💻 Tech Stack & Ecosystem
+ Tech Stack & Ecosystem
 Backend (API Engine)
 Runtime: Node.js with TypeScript (tsx compilation)
 
@@ -55,7 +55,7 @@ Authentication: Clerk Middleware Security
 
 UI & Component Layer: Tailwind CSS, Radix UI, Shadcn Skeletons
 
-📂 Directory Layout (Monorepo)
+ Directory Layout (Monorepo)
 Plaintext
 DevPulse/
 ├── backend/                  # Express Engine
@@ -71,7 +71,7 @@ DevPulse/
 │   │   └── pages/
 │   └── package.json
 └── .gitignore                # Global Environment Exclusions
-⚡ Setup & Production Simulation
+ Setup & Production Simulation
 1. Environment Configuration
 Create a .env file inside the backend/ directory:
 
